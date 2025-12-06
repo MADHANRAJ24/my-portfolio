@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhan Raj.D - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+            color: var(--text-dark);
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            font-size: 10.5pt;
+            /* Optimized for single page */
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 20pt;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-weight: 600;
+            margin: 5px 0;
+            font-size: 11pt;
+        }
+
+        .contact-info {
+            font-size: 9pt;
+            color: var(--text-light);
+        }
+
+        .contact-info a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 10pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--primary);
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 8px;
+            padding-bottom: 2px;
+        }
+
+        .item {
+            margin-bottom: 8px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .item-date {
+            font-size: 9pt;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        ul {
+            margin: 4px 0 0 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 5px;
+            font-size: 10pt;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        @media print {
+            .print-btn {
+                display: none;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" onclick="window.print()" class="print-btn">Download PDF</a>
+
+    <div class="header">
+        <h1>Madhan Raj.D</h1>
+        <div class="subtitle">Generative AI Data Scientist</div>
+        <div class="contact-info">
+            Madurai, India | +91-8098297206 | mathan2412005@gmail.com <br>
+            <a href="https://www.linkedin.com/in/d-madhan-raj-22032b27b/">LinkedIn</a> |
+            <a href="https://github.com/MADHANRAJ24">GitHub</a> |
+            <a href="https://MADHANRAJ24.github.io/my-portfolio/">Portfolio</a>
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div style="text-align: justify; color: var(--text-light);">
+            Innovative Data Scientist specializing in <b>Generative AI</b> and <b>Agentic Workflows</b>. Proven track
+            record of building autonomous systems, from high-frequency trading bots to self-correcting AI agents.
+            Passionate about architectures that think, utilizing <b>LangGraph</b>, <b>LLMs</b>, and <b>PyTorch</b>.
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">Experience</div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">CodeAlpha</span>
+                <span class="item-date">Present</span>
+            </div>
+            <div class="item-subtitle">Data Scientist</div>
+            <ul>
+                <li>Developing innovative data science solutions and predictive models to solve business challenges.
+                </li>
+                <li>Leading end-to-end machine learning projects, focusing on advanced analytics and model optimization.
+                </li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Sfoenix Technologies</span>
+                <span class="item-date">May 2025 – Jun 2025</span>
+            </div>
+            <div class="item-subtitle">Data Science Intern</div>
+            <ul>
+                <li>Applied advanced data preprocessing techniques on complex real-world datasets.</li>
+                <li>Built and evaluated ML models (Regression, Classification) for specific business use cases.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <div class="section-title">Key Projects</div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Super Intelligent Trading Bot</span>
+                <span class="item-date">LangGraph, Groq, Python</span>
+            </div>
+            <ul>
+                <li>Engineered a fully autonomous trading agent using <b>LangGraph</b> and <b>Groq LLM</b>.</li>
+                <li>Implemented a self-improveing reinforcement learning loop based on trade performance.</li>
+                <li>Integrated "Chart Vision" for multimodal analysis of candlestick patterns via Angel One API.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">The Swarm: LLM Ecosystem</span>
+                <span class="item-date">LangChain, OpenAI</span>
+            </div>
+            <ul>
+                <li>Developed 20+ LLM-powered apps including document summarizers and medical chatbots.</li>
+                <li>Orchestrated multi-agent workflows to automate complex backend processes.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">The Architect: Mini LLM</span>
+                <span class="item-date">PyTorch, Transformers</span>
+            </div>
+            <ul>
+                <li>Built a Transformer-based model from scratch, implementing custom attention mechanisms.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">GenAI & LLMs:</div>
+            <div>LangGraph, CrewAI, LangChain, RAG, Prompt Engineering, OpenAI API.</div>
+
+            <div class="skill-category">Data Science:</div>
+            <div>Python, PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, Power BI.</div>
+
+            <div class="skill-category">Web/Tools:</div>
+            <div>React, FastAPI, Git, Docker, PostgresQL.</div>
+        </div>
+    </div>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <div class="item-header">
+            <span class="item-title">B.Tech Artificial Intelligence & Data Science</span>
+            <span class="item-date">80% Score</span>
+        </div>
+        <div style="margin-top: 5px; font-size: 10pt;">
+            <b>Certifications:</b> Python Certified (Advanced), Coursera Specializations (x3), HackerRank (Problem
+            Solving).
+        </div>
+    </div>
+
+</body>
+
+</html>
