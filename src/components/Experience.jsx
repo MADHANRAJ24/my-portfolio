@@ -25,6 +25,45 @@ const Experience = () => {
                         className="relative md:flex items-start"
                     >
                         {/* Timeline Dot */}
+                        <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-violet-400 shadow-[0_0_10px_rgba(139,92,246,0.5)] md:left-1/2 md:-ml-[10px] md:hidden"></div>
+
+                        {/* Content */}
+                        <div className="md:w-1/2 md:pr-12 md:text-right hidden md:block">
+                            <h3 className="text-xl font-bold text-white">Data Scientist</h3>
+                            <p className="text-violet-400">CodeAlpha</p>
+                            <p className="text-sm text-gray-500 mt-1">Present</p>
+                        </div>
+
+                        {/* Center Dot for Desktop */}
+                        <div className="absolute left-1/2 -ml-[11px] w-5 h-5 rounded-full bg-violet-400 shadow-[0_0_10px_rgba(139,92,246,0.5)] hidden md:block"></div>
+
+                        <div className="md:w-1/2 md:pl-12">
+                            <div className="md:hidden">
+                                <h3 className="text-xl font-bold text-white">Data Scientist</h3>
+                                <p className="text-violet-400">CodeAlpha</p>
+                                <p className="text-sm text-gray-500 mt-1 mb-4">Present</p>
+                            </div>
+                            <ul className="space-y-3 text-gray-300">
+                                <li className="flex gap-2">
+                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 flex-shrink-0"></span>
+                                    Developing innovative data science solutions and machine learning models.
+                                </li>
+                                <li className="flex gap-2">
+                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 flex-shrink-0"></span>
+                                    Leading projects involving advanced analytics and predictive modeling.
+                                </li>
+                            </ul>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="relative md:flex items-start"
+                    >
+                        {/* Timeline Dot */}
                         <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)] md:left-1/2 md:-ml-[10px] md:hidden"></div>
 
                         {/* Content */}
