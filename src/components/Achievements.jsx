@@ -4,6 +4,36 @@ import { Award, Code, Trophy } from 'lucide-react';
 const Achievements = () => {
     const achievements = [
         {
+            title: "Python Certified",
+            subtitle: "Course Completion",
+            icon: <Code className="w-8 h-8 text-blue-500" />,
+            link: "/assets/python_certificate.pdf"
+        },
+        {
+            title: "Coursera Certified",
+            subtitle: "Specialization (CYG)",
+            icon: <Award className="w-8 h-8 text-blue-400" />,
+            link: "/assets/coursera_cyg.pdf"
+        },
+        {
+            title: "Coursera Certified",
+            subtitle: "Specialization (UDE)",
+            icon: <Award className="w-8 h-8 text-blue-400" />,
+            link: "/assets/coursera_ude.pdf"
+        },
+        {
+            title: "Coursera Certified",
+            subtitle: "Specialization (VG7)",
+            icon: <Award className="w-8 h-8 text-blue-400" />,
+            link: "/assets/coursera_vg7.pdf"
+        },
+        {
+            title: "Advanced Python",
+            subtitle: "Certification",
+            icon: <Code className="w-8 h-8 text-yellow-500" />,
+            link: "/assets/python_cert_1.pdf"
+        },
+        {
             title: "School Topper",
             subtitle: "Class X (91%)",
             icon: <Award className="w-8 h-8 text-yellow-500" />
@@ -52,6 +82,11 @@ const Achievements = () => {
                             </div>
                             <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                             <p className="text-gray-400 text-sm">{item.subtitle}</p>
+                            {item.link && (
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-cyan-400 text-sm hover:underline">
+                                    View Certificate
+                                </a>
+                            )}
                         </motion.div>
                     ))}
                 </div>
